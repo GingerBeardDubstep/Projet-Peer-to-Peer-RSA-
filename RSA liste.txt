@@ -1,0 +1,32 @@
+Coté Client:
+	-Pair (Récepteur):
+		-Créer une connexion avec le serveur central //UDP DONE
+		-Envoyer une demande de recherche
+		-Pouvoir naviguer dans le résultat de la recherche
+		-Télécharger un fichier auprès d'un autre pair
+	-Pair (Émetteur):
+		-Créer META à partir d'un chemin vers un fichier //DONE 
+		-Mettre en place une écoute //TCP
+		-Mettre en place le chargement/upload de fichier vers un pair
+
+Coté Serveur:
+	-Liste des META
+	-Écoute pour les recherche et publications //DONE
+	-Distinguer les entêtes PUBLISH et SEARCH //DONE
+	//SEARCH	//DONE
+	-Créer une fonction de recherche //DONE
+	-Renvoyer les recherches //DONE
+	-Comparer le sha1 du download avec celui attendu // TODO
+	//PUBLISH //DONE
+	-Enregistrer un META //DONE
+	-Envoyer un message comme quoi l'enregistrement s'est bien passé //DONE
+	-Semaphores SEARCH/PUBLISH //DONE
+	-Renvoyer client vers un nouveau port à la reception d'une requête PUBLISH/SEARCH //DONE
+	//DELETE 
+	-Ajouter une délétion //TODO
+	-Si nom n'existe pas -> ERREUR //TODO
+	-Si le fichier ne lui appartient pas -> ERREUR //TODO
+
+	
+	
+		
